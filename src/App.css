@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+  background: #ada996; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav-wrapper {
+  background-color: white;
+  height: 30%;
+  padding: 20px;
+height: 13rem;
+}
+
+
+nav .brand-logo {
+  color: pink;
+  font-size: 2em;
+  float: right;
+  position: relative;
+  text-align: center;
+  
+}
+
+.brand-logo {
+  padding-bottom: 1rem;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.openingText {
+  background-color: rgb(245, 233, 235);
+  margin: 2em;
+  padding: 1em;
+  font-size: 1rem;
+  text-align: left;
+  border-radius: 2rem;
+}
+
+
+.chart1 {
+ width: 50em;
+ height: 50em;
+  margin: 0.5em;
+  padding: 3rem;
+  display:inline-block;
+  opacity: 0.9;
+}
+
+.chart5 {
+  width: 50em;
+  height: 50em;
+   margin: 0.5em;
+   padding: 3rem;
+   display:inline-block;
+   opacity: 0.9;
+}
+
+.chart2 {
+  height: 45em;
+  margin: 0.5em;
+  padding: 3rem;
+}
+
+.chart3 {
+  height: 45em;
+  margin: 0.5em;
+  margin-left: 2%;
+  padding: 3rem;
+  width: 50em;
+  display:inline-block;
+}
+
+.chart4 {
+  height: 40em;
+  margin: 0.5em;
+  padding: 3rem;
+}
+
+.chart1Text {
+  background-color: rgb(245, 241, 242);
+  float:right;
+  width: 20%;
+  margin: 1rem;
+  margin-right: 10%;
+  margin-top: 11%;
+  padding: 1rem;
+  opacity:0.7;
+  border-radius: 2rem;
+}
+
+.chart2text{
+  background-color: rgb(245, 241, 242);
+  float:left;
+  width: 20%;
+  margin: 1rem;
+  margin-left: 10%;
+  margin-top: 5%;
+  padding: 1rem;
+  opacity:0.7;
+  border-radius: 2rem;
+}
+
+.chart3text{ 
+  background-color: rgb(245, 241, 242);
+  float:bottom;
+  width: 80%;
+  margin: 1rem;
+  margin-left: 10%;
+  padding: 1rem;
+  opacity:0.7;
+  border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.chartBorder {
+  border: 0.15rem solid rgb(82, 80, 80);
+  border-radius: 2rem;
+  margin: 3rem;
+  padding-bottom: 3rem;
+}
+
+.closingBox {
+  background-color: rgb(245, 241, 242) ;
+  font-size: 1.3rem;
+  padding: 1.5rem;
+  margin: 2rem;
+  margin-top: 3rem;
+  opacity: 0.7;
+  border-radius: 2rem;
+}
+
+.whatToExpectBox {
+  background-color: rgb(245, 241, 242) ;
+  float:left;
+  width: 20rem;
+  margin-right: 10%;
+  margin-top: 3em;
+  margin-left: 3rem;
+  padding: 1rem;
+  opacity:0.7;
+  border-radius: 2rem;
+
+}
