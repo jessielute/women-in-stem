@@ -6,19 +6,20 @@ class Chart4 extends Component {
         super(props);
         this.state= {
             chartData: {
-                labels: ['Chart1', 'Chart2', 'Chart3', 'Chart4', 'Chart5'],
-                datasets:[{
-                    fill:false,
-                    data:[
-                        6,
-                        9,
-                        15,
-                        18,
-                        23,
-                    ],
-                    backgroundColor: [
-                        '#E80C7A',
-                    ]
+               
+                labels: ['1970', '1980', '1990', '2000', '2011'],
+                datasets: [{
+                    fill: false,
+                    data: [7, 14, 23, 25, 26, ],
+                    label: "Percent of Women in STEM Fields",
+                    backgroundColor: '#FF8B94',
+                },
+                {
+                    fill: false,
+                    data: [36, 42, 45, 47, 48,],
+                    label: "Percent of Total Workforce Comprised of Women",
+                    backgroundColor: '#FFB6C1',
+
                 }]
             }
         }

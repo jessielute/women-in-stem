@@ -6,23 +6,21 @@ class Chart3 extends Component {
         super(props);
         this.state= {
             chartData: {
-                labels: ['Chart1', 'Chart2', 'Chart3', 'Chart4', 'Chart5'],
-                datasets:[{
-                    data:[
-                        10,
-                        5,
-                        19,
-                        6,
-                        7,
-                    ],
-                    backgroundColor: [
-                        '#E80C7A',
-                        '#b03060',
-                        '#ffc0cb',
-                        '#ff69b4',
-                        '#db7093'
-                    ]
+                labels: ['Science', 'Technology', 'Engineering', 'Mathematics and Computer Science'],
+                datasets: [{
+                    data: [49100, 49700, 61000, 54900],
+                    label: "Women's Median Salaries",
+                    backgroundColor: '#FF8B94',
+                },
+                {
+                    data: [55300, 54600, 66300, 60800],
+                    label: "Men's Median Salaries",
+                    backgroundColor: '#A8E6CF',
+
                 }]
+                
+                    
+                
             }
         }
       }
@@ -37,19 +35,11 @@ class Chart3 extends Component {
 <Bar
 data= {this.state.chartData}
 options={{
-    scales: {
-        xAxes: [{
-            stacked: true
-        }],
-        yAxes: [{
-            stacked: true
-        }]
-    },
     responsive: true,
     maintainAspectRatio: false,
 title: {
 display: this.props.displayTitle,
-text: 'The Wage Gap in STEM.',
+text: 'The Wage Gap in STEM',
 fontSize:35
 },
 legend: {

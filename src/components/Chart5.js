@@ -10,13 +10,12 @@ class Chart5 extends Component {
                 datasets: [{
                     data: [67.4, 32.6],
                     label: "University Graduates by Gender",
-                  
-                    backgroundColor: ['#E80C7A', '#3c4999', '#FFB6C1','rgb(179, 200, 240']
+                    backgroundColor: ['#FF8B94', '#67EDBE', '#FFB6C1','#A8E6CF']
                 },
                 {
                     data: [39, 61],
-                    label: ["Female Graduates of STEM Programs", "Male Graduates of STEM Programs"],
-                    backgroundColor: ['#FFB6C1','rgb(179, 200, 240)'],
+                  
+                    backgroundColor: ['#FFB6C1','#A8E6CF'],
 
                 }]
             }

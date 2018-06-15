@@ -6,7 +6,7 @@
 }
 
 .nav-wrapper {
-  background-color: white;
+  background-color: #A8E6CF;
   height: 30%;
   padding: 20px;
 height: 13rem;
@@ -14,7 +14,7 @@ height: 13rem;
 
 
 nav .brand-logo {
-  color: pink;
+  color: rgba(24, 95, 60, 0.363);
   font-size: 2em;
   float: right;
   position: relative;
@@ -38,6 +38,7 @@ nav .brand-logo {
   font-size: 1rem;
   text-align: left;
   border-radius: 2rem;
+  opacity:0.7;
 }
 
 
@@ -69,12 +70,19 @@ nav .brand-logo {
   height: 45em;
   margin: 0.5em;
   margin-left: 2%;
+  margin-right: 2.3rem;
   padding: 3rem;
-  width: 50em;
+  width: 65em;
   display:inline-block;
 }
 
 .chart4 {
+  height: 40em;
+  margin: 0.5em;
+  padding: 3rem;
+}
+
+.chart6 {
   height: 40em;
   margin: 0.5em;
   padding: 3rem;
@@ -127,7 +135,7 @@ nav .brand-logo {
 
 .closingBox {
   background-color: rgb(245, 241, 242) ;
-  font-size: 1.3rem;
+  font-size: 1.2em;
   padding: 1.5rem;
   margin: 2rem;
   margin-top: 3rem;
@@ -135,13 +143,13 @@ nav .brand-logo {
   border-radius: 2rem;
 }
 
-.whatToExpectBox {
+.chart4text {
   background-color: rgb(245, 241, 242) ;
-  float:left;
-  width: 20rem;
-  margin-right: 10%;
-  margin-top: 3em;
-  margin-left: 3rem;
+  float:right;
+  width: 15rem;
+  margin-top: 6em;
+  margin-left: 2rem;
+  margin-right: 2rem;
   padding: 1rem;
   opacity:0.7;
   border-radius: 2rem;

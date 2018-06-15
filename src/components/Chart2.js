@@ -10,12 +10,12 @@ class Chart2 extends Component {
                 datasets: [{
                     data: [80.5, 29.4, 22.6],
                     label: "Female Graduates",
-                    backgroundColor: '#E80C7A'
+                    backgroundColor: '#FF8B94',
                 },
                 {
                     data: [57, 97.9, 51.8],
                     label: "Male Graduates",
-                    backgroundColor: 'rgb(179, 200, 240)',
+                    backgroundColor: '#A8E6CF',
 
                 }]
             }

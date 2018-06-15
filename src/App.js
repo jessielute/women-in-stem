@@ -6,6 +6,7 @@ import Chart2 from './components/Chart2.js';
 import Chart3 from './components/Chart3.js';
 import Chart4 from './components/Chart4.js';
 import Chart5 from './components/Chart5.js';
+import Chart6 from './components/Chart6.js';
 
 class App extends Component {
   constructor() {
@@ -28,12 +29,12 @@ class App extends Component {
         datasets: [{
           data: [11472, 62754, 54801, 33777, 4290, 13398, 7347, 13386, 25374, 5577, 4386,],
           label: "Female Graduates",
-          backgroundColor: '#E80C7A',
+          backgroundColor: '#FF8B94',
         },
         {
           data: [53571, 47397, 22524, 20625, 10821, 10623, 9135, 8097, 7596, 5094, 4833,],
           label: "Male Graduates",
-          backgroundColor: 'rgb(179, 200, 240)',
+          backgroundColor: '#A8E6CF',
 
         }]
       }
@@ -51,8 +52,13 @@ class App extends Component {
         </nav>
 
         <p className="openingText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Ut pharetra sit amet aliquam id diam maecenas. Lectus proin nibh nisl condimentum id venenatis. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Sed augue lacus viverra vitae congue eu consequat ac. Etiam sit amet nisl purus in mollis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Sem et tortor consequat id porta nibh. Facilisis mauris sit amet massa. Mauris cursus mattis molestie a iaculis at. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Egestas diam in arcu cursus euismod quis viverra. Viverra nam libero justo laoreet. Turpis egestas pretium aenean pharetra magna ac. Arcu vitae elementum curabitur vitae nunc sed velit dignissim.
+        In Canada and elsewhere in the world,Note1 encouraging university students to choose a program in science, technology, engineering, mathematics and computer science (known as 'STEM' programs) has long been a defining outcome of national innovation strategies.
+
+The focus on STEM degrees can be related to how they would contribute to a country’s competitiveness and economic prosperity. Given the scope and nature of their labour market activities–for instance, by engaging in research and development or other knowledge-enhancing activities–STEM graduates are considered key inputs of the national innovation system.Note2 At the individual level, previous reports have also suggested that a STEM degree would lead to better labour market conditions and higher earnings, especially for those with a background in engineering and computer science.Note3
+
+That said, and despite the advances made in recent years,Note4 women remain less likely to choose a career in STEM areas, and more particularly in engineering, mathematics and computer science. This stands in contrast to nearly all other fields of study, where women now represent the vast majority of graduates—especially health and social science programs. Why are women staying away from STEM programs?
+
+This article examines gender differences in program choice and graduation. First, it profiles differences between men and women among recent STEM university graduates aged 25 to 34, using data from the 2011 National Household Survey (NHS). It also examines whether STEM university graduates have better labour market outcomes than non-STEM university graduates.
             </p>
         <div className="chartBorder">
           <Chart5 chartData={this.state.chartData} displayTitle="true" displayLegend="true" legendPosition="right" />
@@ -72,16 +78,44 @@ class App extends Component {
         </div>
         <div className="chartBorder">
           <Chart3 displayTitle="true" displayLegend="true" />
-          <p className="whatToExpectBox">Ut pharetra sit amet aliquam id diam maecenas. Lectus proin nibh nisl condimentum id venenatis. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Sed augue lacus viverra vitae congue eu consequat ac. Etiam sit amet nisl purus in mollis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Sem et tortor consequat id porta nibh. </p>
+          <p className="chart4text">The suggestion that STEM programs would also lead to better-paying jobs is often used as a selling point to encourage more youth to pursue such programs.Note11 According to the NHS, this was true, but even more so for men: in 2010, men aged 25 to 34 who had a STEM university degree and were employed on a full-time and full-year basis earned a median of $62,300, versus $56,000 for those who graduated from non-STEM programs.The gap was smaller among university-educated women: STEM graduates employed full-time, full-year, had median salaries and wages of $53,200, compared with $50,200 for non-STEM graduates.
+</p>
         </div>
         <div className="chartBorder">
           <Chart4 displayTitle="true" displayLegend="true" legendPosition="bottom" />
+          <Chart6 displayTitle="true" displayLegend="true" legendPosition="bottom" />
           <div className="closingBox">
             <p>So what are the next steps? We need to hire and inspire women! And I happen to know one who is looking for a job and coded these sweet charts. Just saying.</p>
           </div>
         </div>
       </div>
+      
     );
+    <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
   }
 }
 
