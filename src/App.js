@@ -25,7 +25,7 @@ class App extends Component {
     //webscraper to go here. Ajax?
     this.setState({
       chartData: {
-        labels: ['Architecture and Engineering', 'Business, Management and Public Administration', 'Social and Behavioural Sciences', 'Humanities', 'Health and Related Fields', 'Mathematics, Computer and Information Science', ['Physical and Life', 'Sciences and Technologies'], 'Personal, Protective and Transportation Services', 'Visual and Performing Arts and Communications Technologies', 'Education', 'Other Instructional Programs',],
+        labels: ['Architecture and Engineering', ['Business Management and ', 'Public Administration'], ['Social and Behavioural','Sciences'], 'Humanities', 'Health and Related Fields', 'Mathematics', ['Computer and', 'Information Science'], ['Physical and Life', 'Sciences and Technologies'], ['Personal, Protective and', 'Transportation Services'], ['Visual and Performing Arts',' and Communication Technologies'], 'Education', 'Other Instructional Programs',],
         datasets: [{
           data: [11472, 62754, 54801, 33777, 4290, 13398, 7347, 13386, 25374, 5577, 4386,],
           label: "Female Graduates",
@@ -52,11 +52,11 @@ class App extends Component {
         </nav>
 
         <p className="openingText">
-        In Canada and elsewhere in the world,Note1 encouraging university students to choose a program in science, technology, engineering, mathematics and computer science (known as 'STEM' programs) has long been a defining outcome of national innovation strategies.
+        In Canada and elsewhere in the world, encouraging university students to choose a program in science, technology, engineering, mathematics and computer science (known as 'STEM' programs) has long been a defining outcome of national innovation strategies.
 
-The focus on STEM degrees can be related to how they would contribute to a country’s competitiveness and economic prosperity. Given the scope and nature of their labour market activities–for instance, by engaging in research and development or other knowledge-enhancing activities–STEM graduates are considered key inputs of the national innovation system.Note2 At the individual level, previous reports have also suggested that a STEM degree would lead to better labour market conditions and higher earnings, especially for those with a background in engineering and computer science.Note3
+The focus on STEM degrees can be related to how they would contribute to a country’s competitiveness and economic prosperity. Given the scope and nature of their labour market activities–for instance, by engaging in research and development or other knowledge-enhancing activities–STEM graduates are considered key inputs of the national innovation system. At the individual level, previous reports have also suggested that a STEM degree would lead to better labour market conditions and higher earnings, especially for those with a background in engineering and computer science.
 
-That said, and despite the advances made in recent years,Note4 women remain less likely to choose a career in STEM areas, and more particularly in engineering, mathematics and computer science. This stands in contrast to nearly all other fields of study, where women now represent the vast majority of graduates—especially health and social science programs. Why are women staying away from STEM programs?
+That said, and despite the advances made in recent years, women remain less likely to choose a career in STEM areas, and more particularly in engineering, mathematics and computer science. This stands in contrast to nearly all other fields of study, where women now represent the vast majority of graduates—especially health and social science programs. Why are women staying away from STEM programs?
 
 This article examines gender differences in program choice and graduation. First, it profiles differences between men and women among recent STEM university graduates aged 25 to 34, using data from the 2011 National Household Survey (NHS). It also examines whether STEM university graduates have better labour market outcomes than non-STEM university graduates.
             </p>
@@ -68,7 +68,7 @@ This article examines gender differences in program choice and graduation. First
 
           <p className="chart2text">
 
-            Furthermore, women with a STEM degree were particularly concentrated in science and technology programs. Specifically, women accounted for 59% of graduates who had a university degree in science and technology, but accounted for 23% of graduates aged 25 to 34 with a university degree in engineering, and 30% of those with a degree in mathematics and computer science. Thus, 39% of the 132,500 women aged 25 to 34 who had a STEM degree had a background in engineering, mathematics or computer science (Chart 1).Note7 In comparison, 72% of the 206,600 STEM-educated men had a background in these fields (47% in engineering and 25% in mathematics and computer science).</p>
+            Furthermore, women with a STEM degree were particularly concentrated in science and technology programs. Specifically, women accounted for 59% of graduates who had a university degree in science and technology, but accounted for 23% of graduates aged 25 to 34 with a university degree in engineering, and 30% of those with a degree in mathematics and computer science. Thus, 39% of the 132,500 women aged 25 to 34 who had a STEM degree had a background in engineering, mathematics or computer science (Chart 1). In comparison, 72% of the 206,600 STEM-educated men had a background in these fields (47% in engineering and 25% in mathematics and computer science).</p>
           <Chart chartData={this.state.chartData} displayTitle="true" displayLegend="true" legendPosition="right" />
         </div>
         <div className="chartBorder">
@@ -78,15 +78,19 @@ This article examines gender differences in program choice and graduation. First
         </div>
         <div className="chartBorder">
           <Chart3 displayTitle="true" displayLegend="true" />
-          <p className="chart4text">The suggestion that STEM programs would also lead to better-paying jobs is often used as a selling point to encourage more youth to pursue such programs.Note11 According to the NHS, this was true, but even more so for men: in 2010, men aged 25 to 34 who had a STEM university degree and were employed on a full-time and full-year basis earned a median of $62,300, versus $56,000 for those who graduated from non-STEM programs.The gap was smaller among university-educated women: STEM graduates employed full-time, full-year, had median salaries and wages of $53,200, compared with $50,200 for non-STEM graduates.
+          <p className="chart4text">The suggestion that STEM programs would also lead to better-paying jobs is often used as a selling point to encourage more youth to pursue such programs. According to the NHS, this was true, but even more so for men: in 2010, men aged 25 to 34 who had a STEM university degree and were employed on a full-time and full-year basis earned a median of $62,300, versus $56,000 for those who graduated from non-STEM programs.The gap was smaller among university-educated women: STEM graduates employed full-time, full-year, had median salaries and wages of $53,200, compared with $50,200 for non-STEM graduates.
 </p>
         </div>
         <div className="chartBorder">
           <Chart4 displayTitle="true" displayLegend="true" legendPosition="bottom" />
           <Chart6 displayTitle="true" displayLegend="true" legendPosition="bottom" />
           <div className="closingBox">
-            <p>So what are the next steps? We need to hire and inspire women! And I happen to know one who is looking for a job and coded these sweet charts. Just saying.</p>
+            <p>So what are the next steps? We need to hire and inspire women! And I happen to know one who is looking for a job and coded these sweet charts. Just saying.
+            </p>
           </div>
+          <ul>SOURCES:</ul>
+              <ul><a className= "Sources" href="https://www150.statcan.gc.ca/n1/pub/75-006-x/2013001/article/11874-eng.htm">Stats Canada</a></ul>
+              <ul><a className = "Sources" href= "https://www.census.gov/content/dam/Census/newsroom/releases/2013/cb13-162_stem_female.pdfUS Census">US Census</a></ul>
         </div>
       </div>
       

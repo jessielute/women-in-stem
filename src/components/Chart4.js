@@ -13,13 +13,14 @@ class Chart4 extends Component {
                     data: [7, 14, 23, 25, 26, ],
                     label: "Percent of Women in STEM Fields",
                     backgroundColor: '#FF8B94',
+                    borderColor: '#FF8B94',
                 },
                 {
                     fill: false,
                     data: [36, 42, 45, 47, 48,],
                     label: "Percent of Total Workforce Comprised of Women",
-                    backgroundColor: '#FFB6C1',
-
+                    backgroundColor: '#A8E6CF',
+                    borderColor: '#A8E6CF',
                 }]
             }
         }

@@ -23,7 +23,8 @@ console.log('app listening on port 8080')
 
 app.get("/allData", async (req, res) => {
     let womenData = await getWomen();
-    res.send(womenData);
+    
+    res.send({womenData: womenData, menData: menData});
 })
 
 //finds stats of how many female graduates in each area of STEM
@@ -47,21 +48,20 @@ const getWomen =  async () => {
 
 
 //finds stats of how many male graduates in each area of STEM
-/*
-request(url, function (error, response, body) {
-    if (!error) {
-        var $ = cheerio.load(body);
-        let menResultsArray = [];
-        let menWantedRows = [2, 3, 4];
-
-        for (i in menWantedRows) {
-            let title = $(`#hdt1r1c${menWantedRows[i]}`).html()
-            let result = $(`[headers='t1stub2 hdt1r1c${menWantedRows[i]}']`).html()
-            menResultsArray.push({ title: title, data: result })
-            console.log(menResultsArray[i])
-        }
-    } else {
-        console.log("We’ve encountered an error: " + error);
-    }
-});
-*/
+const getMen =  async () => {
+    let menResultsIWant = await request(url).then((result) => {
+        console.log("started!")
+        let body = result.data;
+         var $ = cheerio.load(body);
+         let wantedRows = [2, 3, 4];
+         let resultsArray = [];
+         for (i in wantedRows) {
+             let title = $(`#hdt1r1c2${wantedRows[i]}`).html()
+             let result = $(`[headers='t1stub1 hdt1r1c${wantedRows[i]}']`).html()
+             resultsArray.push(({ title: title, data: result }));
+         }
+         console.log(resultsArray);
+         return resultsArray;
+    }).catch(err => { console.log("We’ve encountered an error: " + err) })
+    return menResultsIWant;
+ }
