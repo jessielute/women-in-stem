@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import {Bar} from 'react-chartjs-2';
+import React, { Component } from 'react';
+import { Bar } from 'react-chartjs-2';
 
 class Chart3 extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state= {
+        this.state = {
             chartData: {
                 labels: ['Science', 'Technology', 'Engineering', 'Mathematics and Computer Science'],
                 datasets: [{
@@ -18,36 +18,36 @@ class Chart3 extends Component {
                     backgroundColor: '#A8E6CF',
 
                 }]
-                
-                    
-                
+
+
+
             }
         }
-      }
-      static defaultProps = {
-          displayTitle: true,
-          displayLegend: true,
-          legendPosition: 'left'
-      }
-    render(){
+    }
+    static defaultProps = {
+        displayTitle: true,
+        displayLegend: true,
+        legendPosition: 'left'
+    }
+    render() {
         return (
-            <div className= "chart3">
-<Bar
-data= {this.state.chartData}
-options={{
-    responsive: true,
-    maintainAspectRatio: false,
-title: {
-display: this.props.displayTitle,
-text: 'The Wage Gap in STEM',
-fontSize:35
-},
-legend: {
-display:this.props.displayLegend,
-position:this.props.legendPosition,
-}
-}}
-/>
+            <div className="chart3">
+                <Bar
+                    data={this.state.chartData}
+                    options={{
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        title: {
+                            display: this.props.displayTitle,
+                            text: 'The Wage Gap in STEM',
+                            fontSize: 35
+                        },
+                        legend: {
+                            display: this.props.displayLegend,
+                            position: this.props.legendPosition,
+                        }
+                    }}
+                />
             </div>
         )
 

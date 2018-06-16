@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Doughnut} from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 
 class Chart5 extends Component {
     constructor(props) {
@@ -10,12 +10,12 @@ class Chart5 extends Component {
                 datasets: [{
                     data: [67.4, 32.6],
                     label: "University Graduates by Gender",
-                    backgroundColor: ['#FF8B94', '#67EDBE', '#FFB6C1','#A8E6CF']
+                    backgroundColor: ['#FF8B94', '#67EDBE', '#FFB6C1', '#A8E6CF']
                 },
                 {
                     data: [39, 61],
-                  
-                    backgroundColor: ['#FFB6C1','#A8E6CF'],
+
+                    backgroundColor: ['#FFB6C1', '#A8E6CF'],
 
                 }]
             }

@@ -25,7 +25,7 @@ class App extends Component {
     //webscraper to go here. Ajax?
     this.setState({
       chartData: {
-        labels: ['Architecture and Engineering', ['Business Management and ', 'Public Administration'], ['Social and Behavioural','Sciences'], 'Humanities', 'Health and Related Fields', 'Mathematics', ['Computer and', 'Information Science'], ['Physical and Life', 'Sciences and Technologies'], ['Personal, Protective and', 'Transportation Services'], ['Visual and Performing Arts',' and Communication Technologies'], 'Education', 'Other Instructional Programs',],
+        labels: ['Architecture and Engineering', ['Business Management and ', 'Public Administration'], ['Social and Behavioural', 'Sciences'], 'Humanities', 'Health and Related Fields', 'Mathematics', ['Computer and', 'Information Science'], ['Physical and Life', 'Sciences and Technologies'], ['Personal, Protective and', 'Transportation Services'], ['Visual and Performing Arts', ' and Communication Technologies'], 'Education', 'Other Instructional Programs',],
         datasets: [{
           data: [11472, 62754, 54801, 33777, 4290, 13398, 7347, 13386, 25374, 5577, 4386,],
           label: "Female Graduates",
@@ -52,13 +52,13 @@ class App extends Component {
         </nav>
 
         <p className="openingText">
-        In Canada and elsewhere in the world, encouraging university students to choose a program in science, technology, engineering, mathematics and computer science (known as 'STEM' programs) has long been a defining outcome of national innovation strategies.
-
-The focus on STEM degrees can be related to how they would contribute to a country’s competitiveness and economic prosperity. Given the scope and nature of their labour market activities–for instance, by engaging in research and development or other knowledge-enhancing activities–STEM graduates are considered key inputs of the national innovation system. At the individual level, previous reports have also suggested that a STEM degree would lead to better labour market conditions and higher earnings, especially for those with a background in engineering and computer science.
-
-That said, and despite the advances made in recent years, women remain less likely to choose a career in STEM areas, and more particularly in engineering, mathematics and computer science. This stands in contrast to nearly all other fields of study, where women now represent the vast majority of graduates—especially health and social science programs. Why are women staying away from STEM programs?
-
-This article examines gender differences in program choice and graduation. First, it profiles differences between men and women among recent STEM university graduates aged 25 to 34, using data from the 2011 National Household Survey (NHS). It also examines whether STEM university graduates have better labour market outcomes than non-STEM university graduates.
+          In Canada and elsewhere in the world, encouraging university students to choose a program in science, technology, engineering, mathematics and computer science (known as 'STEM' programs) has long been a defining outcome of national innovation strategies.
+  
+  The focus on STEM degrees can be related to how they would contribute to a country’s competitiveness and economic prosperity. Given the scope and nature of their labour market activities–for instance, by engaging in research and development or other knowledge-enhancing activities–STEM graduates are considered key inputs of the national innovation system. At the individual level, previous reports have also suggested that a STEM degree would lead to better labour market conditions and higher earnings, especially for those with a background in engineering and computer science.
+  
+  That said, and despite the advances made in recent years, women remain less likely to choose a career in STEM areas, and more particularly in engineering, mathematics and computer science. This stands in contrast to nearly all other fields of study, where women now represent the vast majority of graduates—especially health and social science programs. Why are women staying away from STEM programs?
+  
+  This article examines gender differences in program choice and graduation. First, it profiles differences between men and women among recent STEM university graduates aged 25 to 34, using data from the 2011 National Household Survey (NHS). It also examines whether STEM university graduates have better labour market outcomes than non-STEM university graduates.
             </p>
         <div className="chartBorder">
           <Chart5 chartData={this.state.chartData} displayTitle="true" displayLegend="true" legendPosition="right" />
@@ -89,37 +89,37 @@ This article examines gender differences in program choice and graduation. First
             </p>
           </div>
           <ul>SOURCES:</ul>
-              <ul><a className= "Sources" href="https://www150.statcan.gc.ca/n1/pub/75-006-x/2013001/article/11874-eng.htm">Stats Canada</a></ul>
-              <ul><a className = "Sources" href= "https://www.census.gov/content/dam/Census/newsroom/releases/2013/cb13-162_stem_female.pdfUS Census">US Census</a></ul>
+          <ul><a className="Sources" href="https://www150.statcan.gc.ca/n1/pub/75-006-x/2013001/article/11874-eng.htm">Stats Canada</a></ul>
+          <ul><a className="Sources" href="https://www.census.gov/content/dam/Census/newsroom/releases/2013/cb13-162_stem_female.pdfUS Census">US Census</a></ul>
         </div>
       </div>
-      
+
     );
     <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
       <div class="container">
-      © 2014 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
   }
 }
 

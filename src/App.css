@@ -1,17 +1,19 @@
 .App {
   text-align: center;
-  background: #ada996; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ada996;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .nav-wrapper {
   background-color: #A8E6CF;
   height: 30%;
   padding: 20px;
-height: 13rem;
+  height: 13rem;
 }
-
 
 nav .brand-logo {
   color: rgba(24, 95, 60, 0.363);
@@ -19,7 +21,6 @@ nav .brand-logo {
   float: right;
   position: relative;
   text-align: center;
-  
 }
 
 .brand-logo {
@@ -38,26 +39,25 @@ nav .brand-logo {
   font-size: 1rem;
   text-align: left;
   border-radius: 2rem;
-  opacity:0.7;
+  opacity: 0.7;
 }
 
-
 .chart1 {
- width: 50em;
- height: 50em;
+  width: 50em;
+  height: 50em;
   margin: 0.5em;
   padding: 3rem;
-  display:inline-block;
+  display: inline-block;
   opacity: 0.9;
 }
 
 .chart5 {
   width: 50em;
   height: 50em;
-   margin: 0.5em;
-   padding: 3rem;
-   display:inline-block;
-   opacity: 0.9;
+  margin: 0.5em;
+  padding: 3rem;
+  display: inline-block;
+  opacity: 0.9;
 }
 
 .chart2 {
@@ -73,7 +73,7 @@ nav .brand-logo {
   margin-right: 2.3rem;
   padding: 3rem;
   width: 65em;
-  display:inline-block;
+  display: inline-block;
 }
 
 .chart4 {
@@ -90,36 +90,36 @@ nav .brand-logo {
 
 .chart1Text {
   background-color: rgb(245, 241, 242);
-  float:right;
+  float: right;
   width: 20%;
   margin: 1rem;
   margin-right: 10%;
   margin-top: 11%;
   padding: 1rem;
-  opacity:0.7;
+  opacity: 0.7;
   border-radius: 2rem;
 }
 
-.chart2text{
+.chart2text {
   background-color: rgb(245, 241, 242);
-  float:left;
+  float: left;
   width: 20%;
   margin: 1rem;
   margin-left: 10%;
   margin-top: 5%;
   padding: 1rem;
-  opacity:0.7;
+  opacity: 0.7;
   border-radius: 2rem;
 }
 
-.chart3text{ 
+.chart3text {
   background-color: rgb(245, 241, 242);
-  float:bottom;
+  float: bottom;
   width: 80%;
   margin: 1rem;
   margin-left: 10%;
   padding: 1rem;
-  opacity:0.7;
+  opacity: 0.7;
   border-radius: 2rem;
   text-align: center;
   display: flex;
@@ -134,7 +134,7 @@ nav .brand-logo {
 }
 
 .closingBox {
-  background-color: rgb(245, 241, 242) ;
+  background-color: rgb(245, 241, 242);
   font-size: 1.2em;
   padding: 1em;
   margin: 2rem;
@@ -144,14 +144,13 @@ nav .brand-logo {
 }
 
 .chart4text {
-  background-color: rgb(245, 241, 242) ;
-  float:right;
+  background-color: rgb(245, 241, 242);
+  float: right;
   width: 15rem;
   margin-top: 6em;
   margin-left: 2rem;
   margin-right: 2rem;
   padding: 1rem;
-  opacity:0.7;
+  opacity: 0.7;
   border-radius: 2rem;
-
 }
